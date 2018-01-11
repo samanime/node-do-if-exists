@@ -3,7 +3,7 @@
   "bin": {
     "do-if-exists": "dist/bin/do-if-exists.js"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Command-line tool to run a command only if files exist.",
   "main": "dist/index.js",
   "scripts": {
@@ -23,10 +23,8 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-plugin-import-rename": "^1.0.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-env": "^1.6.1",
-    "source-map-support": "^0.5.0"
+    "babel-preset-env": "^1.6.1"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",

@@ -1,0 +1,36 @@
+{
+  "name": "do-if-exists",
+  "bin": {
+    "do-if-exists": "dist/bin/do-if-exists.js"
+  },
+  "version": "0.0.2",
+  "description": "Command-line tool to run a command only if files exist.",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepare": "npm run clean & npm run build",
+    "clean": "rm -rf dist",
+    "build": "babel src -d dist -s",
+    "build:watch": "npm run build -- -w"
+  },
+  "author": "Christian Snodgrass <christian.snodgrass.open@gmail.com> (http://xazure.net)",
+  "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/samanime/node-do-if-exists.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samanime/node-do-if-exists/issues"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-import-rename": "^1.0.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "source-map-support": "^0.5.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "glob": "^7.1.2",
+    "shelljs": "^0.7.8"
+  }
+}
